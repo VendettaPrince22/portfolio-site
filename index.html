@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kairo Prince</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="home">
+        <div class="nav-container">
+            <nav>
+                <p>KairoPrince</p>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content stylish-home">
+            <div class="hero-name-container">
+                <h1 class="hero-name">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="draw-name">Kairo Prince</span>
+                </h1>
+                <svg class="name-underline" width="340" height="30" viewBox="0 0 340 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 20 Q170 40 330 20" stroke="#FFD700" stroke-width="4" fill="none"/>
+                </svg>
+            </div>
+            <h2 class="hero-title">Web Developer & IT Specialist</h2>
+            <p class="hero-tagline">Building clean, modern, and efficient web solutions.</p>
+        </div>
+    </header>
+    <section id="about">
+        <div class="w3-card-4 profile-pic">
+            <img id="profile-photo" src="profile photo.jpeg" alt="Profile picture" class="image">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </div>
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>As a results-driven Web Developer and IT Specialist, I help businesses and individuals elevate their digital presence through innovative, high-performance web solutions. With a proven track record in delivering modern, responsive, and user-centric websites, I combine technical expertise with creative problem-solving to turn your vision into reality. My commitment to quality, clear communication, and on-time delivery ensures a seamless experience from concept to launch. Let’s work together to build digital experiences that set you apart and drive real results.</p>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Work</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <a href="#home"><img src="portfolio_img.png" alt="Profile picture" class="image"></a>
+                <p>My professional portfolio showcasing my work and achievements in web development and IT.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <a href="C:\Users\USER\Documents\projects\Tash&ShawnHardware\index.html"><img src="Hardware_img.png" alt="Hardware site" class="image"></a>
+                <p>A hardware website showcasing products and services.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <img src="profile01.jpg" alt="Profile picture" class="image">
+                <p>Another example of your work. Showcase your skills and achievements.</p>
+            </div>
+        </div>
+        <div class="view-more">
+            <button class="project-btn">View More Projects</button>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills & Services</h2>
+        <div class="skills w3-card-2">
+            <h3>Tech Stack</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+                <li> MongoDB</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        <div class="skills w3-card-2">
+            <h3>Services</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>IT Support</li>
+                <li>Technical Consulting</li>
+                <li>Database Integration</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact w3-card-2 w3-container">
+            <p>I'm always open to new opportunities and collaborations. Whether you have a project in mind or just want to connect, feel free to reach out!</p>
+            <form class="contact-form w3-container" action="welcome.php" method="post" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input class="w3-input w3-round" type="text" id="name" name="name" minlength="2" maxlength="100" required>
+                <label for="email">Email:</label>
+                <input class="w3-input w3-round" type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea class="w3-input w3-round" id="message" name="message" minlength="5" maxlength="1000" required></textarea>
+                <button class="w3-button w3-black w3-block" type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info w3-card-2 w3-container">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:pomegah@gmail.com">pomegah@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/kairop">linkedin.com/in/kairop</a></p>
+            <p>Phone: <a href="tel:+254793019149">+254 793 019 149</a></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Kairo Prince. All rights reserved.</p>
+    </footer>
+</body>
+</html>
